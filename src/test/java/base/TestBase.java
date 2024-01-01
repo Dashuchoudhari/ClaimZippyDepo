@@ -19,13 +19,8 @@ public class TestBase {
 	public static FileReader fr;
 
 	public void setup() throws IOException, InterruptedException {
-		
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://demoqa.com/automation-practice-form");
-		Thread.sleep(2000);
-	}
-
-		/*if(driver==null) {
+	
+		if(driver==null) {
 			FileReader fr = new FileReader("C:\\Users\\BusinessComputers.in\\eclipse-workspace\\ClaimZippyProject\\src\\test\\java\\config\\config.properties");
 			prop.load(fr);
 
