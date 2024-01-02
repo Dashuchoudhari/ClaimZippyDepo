@@ -33,15 +33,15 @@ PracticeFormPage a=new PracticeFormPage();
 			   a.logoDisplay.isDisplayed();
 		}
 		@Test
-		public void ValidFirstName() {
+		public void InValidFirstName() {
 			a.firstname.sendKeys("Da shu");
 		}
 		@Test
-		public void ValidLastName() {
+		public void InValidLastName() {
 			a.lastName.sendKeys("123");
 		}
 		@Test
-		public void validEmail() {
+		public void InvalidEmail() {
 			a.email.sendKeys("dashu @gmail.com");
 		}
 		
@@ -49,11 +49,11 @@ PracticeFormPage a=new PracticeFormPage();
 			a.gender.click();
 		}
 		@Test
-		public void enterMobileNumber() {
+		public void InvalidmobileNumber() {
 			a.mobileNumber.sendKeys("0000000000");
 		}
 		@Test
-		public void validDateOfBirth() {
+		public void InvalidDateOfBirth() {
 			a.DateOfBirth.sendKeys(Keys.CONTROL,"a");
 			a.DateOfBirth.sendKeys("");
 		}
@@ -74,8 +74,8 @@ PracticeFormPage a=new PracticeFormPage();
 					
 		}
 		@Test
-		public void enterAddress() {
-			a.address.sendKeys("Kolhapur");
+		public void emtyAddress() {
+			a.address.sendKeys(" ");
 		}
 		@Test
 		public void selectState() {
